@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<scr>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       1. // Finding the index of the first occurence
+const originalString = "This is a sample string.";
+const targetSubstring = "sample";
+const found = originalString.includes(targetSubstring);
+
+if (found) {
+    const index = originalString.indexOf(targetSubstring);
+    console.log("Index of the first occurrence:", index);
+} else {
+    console.log("Substring not found.");
+}
+
+    2.// Duplicate array
+    let array1 = [1, 2, 3, 4, 5];
+    let duplicate = array1.slice();
+   let arr = [1, 2, 3, 4, 5]; 
+   console.log("Duplicate array is:")
+  console.log(duplicate);
+
+3.//Finding the intersection of two array
+
+function message(num1, num2) {
+    return num1.filter(element => num2.includes(element));
+}
+const num1 = [1, 2, 3, 4, 5];
+const num2 = [4, 5, 6, 7, 8];
+const intersection = message(num1, num2);
+console.log(intersection); 
+
+
+ 4.//Finding the difference between two array
+      
+    
+function deff(arr1, arr2) {
+  return arr1.filter(function(element){
+    return !arr2.includes(element);
+  });
+}
+const df1 = [1, 2, 3, 4, 5];
+const df2 = [4, 5, 6, 7, 8];
+const difference = deff(df1, df2); 
+console.log(difference); 
+
+ 5.//Removing array items by index
+ let number1=[1,2,3,4,5,6];
+ let remove=0;
+ number1.splice(remove,3);
+ console.log(number1);
+    </script>
+</body>
+</html>
